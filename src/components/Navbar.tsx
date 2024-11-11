@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { ChevronDownIcon } from 'lucide-react';
 import Mobiledrawer from './Mobiledrawer';
 
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(null);
 
-  const handleMenuHover = (menu) => {
+  const handleMenuHover = (menu:any) => {
     setActiveMenu(menu);
   };
 

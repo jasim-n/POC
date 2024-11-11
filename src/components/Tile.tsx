@@ -1,18 +1,12 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { DeleteIcon, FlagIcon, Pencil } from "lucide-react";
-import {
-  AlertDialog,
-  AlertDialogContent,
-  AlertDialogTrigger,
-} from "./ui/alert-dialog";
-import { Box, Modal } from "@mui/material";
+
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
   DialogDescription,
-  DialogFooter,
 } from "@/components/ui/dialog";
 import { Button } from "./ui/button";
 

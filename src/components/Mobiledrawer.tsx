@@ -10,7 +10,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
-import { Close, CropSquareSharp, Menu } from '@mui/icons-material';
+import { Close, Menu } from '@mui/icons-material';
 
 
 export default function Mobiledrawer() {
@@ -58,7 +58,7 @@ export default function Mobiledrawer() {
 
           {item.subItems && (
             <List>
-              {item.subItems.map((subItem, subIndex) => (
+              {item.subItems.map((subItem) => (
                 <ListItem key={subItem.label} disablePadding>
                   <ListItemButton>
                     <ListItemIcon>

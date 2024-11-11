@@ -1,7 +1,5 @@
 
 import './App.css'
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
-import { AppSidebar } from './components/AppSideBar'
 import Nav from './components/Navbar'
 import TableComponent from './components/Table'
 import StudentTile from './components/Tile'

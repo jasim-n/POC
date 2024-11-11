@@ -1,5 +1,5 @@
 import * as React from "react"
-import { GalleryVerticalEnd, Minus, Plus } from "lucide-react"
+import {  Minus, Plus } from "lucide-react"
 
 import {
   Collapsible,
@@ -14,12 +14,8 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-  SidebarMenuSub,
-  SidebarMenuSubButton,
-  SidebarMenuSubItem,
   SidebarRail,
 } from "@/components/ui/sidebar"
-import { it } from "node:test"
 
 
 const data = {
@@ -91,7 +87,7 @@ POC
                   </CollapsibleTrigger>
                   {item.items?.length ? (
                     <CollapsibleContent>
-                      <SidebarMenuSub>
+                      {/* <SidebarMenuSub>
                         {item.items.map((item) => (
                           <SidebarMenuSubItem key={item.title}>
                             <SidebarMenuSubButton
@@ -102,7 +98,7 @@ POC
                             </SidebarMenuSubButton>
                           </SidebarMenuSubItem>
                         ))}
-                      </SidebarMenuSub>
+                      </SidebarMenuSub> */}
                     </CollapsibleContent>
                   ) : null}
                 </SidebarMenuItem>
