@@ -47,8 +47,8 @@ export default function Mobiledrawer() {
 
       <List sx={{display:"flex",flexDirection:"column"}}>
       {menuItems.map((item, index) => (
-        <ListItem key={item.label} disablePadding>
-          <ListItemButton>
+        <ListItem sx={{width: item.subItems ? "100%" : "auto", flexDirection:item.subItems? "column":"row"}} key={item.label} disablePadding>
+          <ListItemButton sx={{width: item.subItems ? "100%" : "auto"}}>
             <ListItemIcon>
               {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
             </ListItemIcon>   
@@ -73,18 +73,7 @@ export default function Mobiledrawer() {
         </ListItem>
       ))}
     </List>
-      <List>
-        {['Home', 'About', 'Student Cources', 'contacts'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
+  
       <Divider />
       <List>
         {['All mail', 'Trash', 'Spam'].map((text, index) => (
